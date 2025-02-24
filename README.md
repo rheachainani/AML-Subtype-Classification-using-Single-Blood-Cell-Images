@@ -54,4 +54,4 @@ The data is preprocessed, ensuring class balance, and is used for training and t
 ## User Interface
 
 The project includes a user-friendly interface that enables users to upload patient images for subtype classification, displaying cell type counts and AML predictions for diagnostic insight.
-[Demo](Deployment.mp4)
+[Demo](Deployment.mp4) / [Deployment](https://drive.google.com/file/d/1nhQylDgrd9PtpQw-N2KuELWGN3T5DWgj/view?usp=sharing)
