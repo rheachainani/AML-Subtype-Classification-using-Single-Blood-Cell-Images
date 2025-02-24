@@ -13,9 +13,6 @@ This project focuses on classifying subtypes of Acute Myeloid Leukemia (AML) usi
    - [AML Subtype Classification](#aml-subtype-classification)
 4. [Results](#results)
 5. [User Interface](#user-interface)
-6. [Installation](#installation)
-7. [Usage](#usage)
-8. [References](#references)
 
 ## Objectives
 
@@ -57,3 +54,4 @@ The data is preprocessed, ensuring class balance, and is used for training and t
 ## User Interface
 
 The project includes a user-friendly interface that enables users to upload patient images for subtype classification, displaying cell type counts and AML predictions for diagnostic insight.
+[Demo](Deployment.mp4)
