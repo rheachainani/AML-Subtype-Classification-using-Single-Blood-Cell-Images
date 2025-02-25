@@ -1,9 +1,11 @@
 # Acute Myeloid Leukemia (AML) Subtype Classification Using Single Blood Cell Images
 
+---
 ## Project Overview
 
 This project focuses on classifying subtypes of Acute Myeloid Leukemia (AML) using deep learning techniques. AML is a type of cancer that impacts the myeloid lineage of blood cells, often associated with specific genetic mutations. By leveraging single-cell blood smear images, the project aims to enhance diagnostic accuracy and support personalized treatment plans.
 
+---
 ## Table of Contents
 1. [Objectives](#objectives)
 2. [Dataset](#dataset)
@@ -12,14 +14,15 @@ This project focuses on classifying subtypes of Acute Myeloid Leukemia (AML) usi
    - [Data Aggregation](#data-aggregation)
    - [AML Subtype Classification](#aml-subtype-classification)
 4. [Results](#results)
-5. [User Interface](#user-interface)
-
+5. [Deployment](#deployment)
+   
+---
 ## Objectives
 
 - Improve AML subtype classification accuracy through single-cell image analysis.
 - Experiment with multiple deep learning architectures for sensitivity in detecting AML subtypes.
 - Validate the model's diagnostic accuracy and real-world applicability to assist healthcare professionals.
-
+---
 ## Dataset
 
 This project utilizes two main datasets:
@@ -27,6 +30,8 @@ This project utilizes two main datasets:
 2. **AML and Control Group Dataset**: Comprises 189 peripheral blood smears, divided by specific AML subtypes and a control group.
 
 The data is preprocessed, ensuring class balance, and is used for training and testing deep learning models.
+
+---
 
 ## Methodology
 
@@ -47,14 +52,127 @@ The data is preprocessed, ensuring class balance, and is used for training and t
 
 ![image](https://github.com/user-attachments/assets/0d873077-6487-4d6e-8513-fed141a9c13a)
 
-
+---
 ## Results
 
 - The CNN achieved 94% accuracy on unseen data, indicating robust performance.
 - Performance metrics across AML subtypes and control groups demonstrate high precision, recall, and F1-scores.
 - Correlations of the single blood cell types with the presence/absence of AML suggest that basophils may indicate control, while lymphocytes and monocytes correlate with AML subtypes.
 
-## User Interface
+---
+
+## Deployment
 
 The project includes a user-friendly interface that enables users to upload patient images for subtype classification, displaying cell type counts and AML predictions for diagnostic insight.
-[Demo](Deployment.mp4) / [Deployment](https://drive.google.com/file/d/1nhQylDgrd9PtpQw-N2KuELWGN3T5DWgj/view?usp=sharing)
+
+The Streamlit application classifies AML subtypes using blood cell images. It consists of:
+
+1. **Information Page** – Provides an overview of AML subtypes.
+2. **Classification Page** – Accepts multiple blood cell images, identifies cell types, and predicts AML subtype.
+
+The application leverages deep learning for single-cell classification and an ensemble model (`voting_model.pkl`) for final AML subtype prediction.
+
+[Demo](https://drive.google.com/file/d/1nhQylDgrd9PtpQw-N2KuELWGN3T5DWgj/view?usp=sharing)
+
+---
+
+### Environment Setup
+
+**Using Virtual Environment (Recommended)**
+
+To create an isolated environment for this project:
+
+```bash
+python -m venv aml_env
+source aml_env/bin/activate  # For Linux/macOS
+aml_env\Scripts\activate     # For Windows
+```
+
+**Install Required Packages**
+
+Install the dependencies from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+If `requirements.txt` is missing, manually install dependencies:
+
+```bash
+pip install streamlit tensorflow numpy opencv-python joblib huggingface_hub dill scikeras scikit-learn
+```
+
+---
+
+### **Running the Application**
+
+**Start Streamlit App**
+
+Run the following command in the project directory:
+
+```bash
+streamlit run AML_app.py
+```
+
+This will launch a local web application, accessible at:\
+📌 `http://localhost:8501/`
+
+---
+
+### **Using the Application**
+
+**Navigation**
+
+- **"About AML" Page:** Provides background on AML subtypes and their significance.
+- **"Classify Blood Cells" Page:**
+  - Upload multiple blood cell images (**JPG, PNG, TIFF**).
+  - The **single-cell classifier** (`single_blood_cell_classifier.keras`) predicts individual blood cell types.
+  - The **counts of 8 blood cell types** are displayed.
+  - The **voting classifier (**``**) predicts the final AML subtype or control.**
+
+---
+
+### Model Details
+
+**Models Used**
+
+- **Single-Cell Classifier:** `single_blood_cell_classifier.keras` (available via Hugging Face repo)
+  - CNN model that classifies individual blood cells into 8 types.
+- **AML Subtype Classifier:** `voting_model.pkl`
+  - A trained ensemble model that predicts AML subtype based on aggregated blood cell counts.
+
+---
+### Notes
+
+1. Ensure all required model files (**``** and **``**) are available in the project directory.
+2. For missing models, the single-cell classifier is downloaded from Hugging Face.
+3. If running on a different machine, re-install dependencies and check TensorFlow compatibility.
+
+---
+### Troubleshooting
+
+**Model Not Found?**
+
+- Check if the Hugging Face model download was successful.
+- Verify the model files exist in the correct directory.
+
+ **Streamlit Not Found?**
+
+If Streamlit isn't installed, run:
+
+```bash
+pip install streamlit
+```
+
+**App Not Running?**
+
+Try restarting the environment and re-running:
+
+```bash
+source aml_env/bin/activate  # (Linux/macOS)  
+aml_env\Scripts\activate     # (Windows)  
+streamlit run AML_app.py
+```
+
+
+
