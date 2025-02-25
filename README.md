@@ -78,7 +78,7 @@ The Streamlit application classifies AML subtypes using blood cell images. It co
 
 The application leverages deep learning for single-cell classification and an ensemble model (`voting_model.pkl`) for final AML subtype prediction.
 
-[Demo](https://drive.google.com/file/d/1nhQylDgrd9PtpQw-N2KuELWGN3T5DWgj/view?usp=sharing)
+[Demo](https://drive.google.com/file/d/1sYIbR92YQYGrJCTk6gm-MTWxWLfRUK_X/view?usp=sharing)
 
 ---
 
