@@ -15,6 +15,12 @@ This project focuses on classifying subtypes of Acute Myeloid Leukemia (AML) usi
    - [AML Subtype Classification](#aml-subtype-classification)
 4. [Results](#results)
 5. [Deployment](#deployment)
+   - [Environment Setup](#environment-setup)
+   - [Running the Application](#running-the-application)
+   - [Using the Application](#using-the-application)
+   - [Model Details](#model-details)
+   - [Notes](#notes)
+   - [Troubleshooting](#troubleshooting)
    
 ---
 ## Objectives
