@@ -108,6 +108,13 @@ If `requirements.txt` is missing, manually install dependencies:
 pip install streamlit tensorflow numpy opencv-python joblib huggingface_hub dill scikeras scikit-learn
 ```
 
+**Log into Hugging Face (required for private models or faster downloads)**
+```bash
+huggingface-cli login
+```
+After running this, enter your Hugging Face access token (which you can generate at huggingface.co/settings/tokens).
+
+
 ---
 
 ### **Running the Application**
