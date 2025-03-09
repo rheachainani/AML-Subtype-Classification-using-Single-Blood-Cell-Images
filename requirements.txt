@@ -14,3 +14,5 @@ huggingface_hub==0.15.1
 opencv-python==4.7.0.72
 opencv-python-headless==4.7.0.72
 dill==0.3.6
+setuptools
+pip==25.0.1
