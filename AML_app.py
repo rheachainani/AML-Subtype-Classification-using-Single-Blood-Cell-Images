@@ -20,7 +20,7 @@ cell_types = [
 ]
 
 # AML subtype labels
-aml_subtypes = ["RUNX1-RUNX1T1", "CBFB-MYH11", "NPM1", "PML-RARA", "Control Group"]
+aml_subtypes = ['CBFB_MYH11', 'NPM1', 'PML_RARA', 'RUNX1_RUNX1T1', 'Control Group']
 
 def preprocess_image(image):
     """
