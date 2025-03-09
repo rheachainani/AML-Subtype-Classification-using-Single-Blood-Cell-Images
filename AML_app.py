@@ -60,10 +60,10 @@ def main():
         st.write("""
         Acute Myeloid Leukemia (AML) is a fast-progressing cancer of the blood and bone marrow, primarily affecting white blood cells. Our application classifies AML into four genetically defined subtypes and a control group, each with unique clinical characteristics that guide treatment decisions:
 
-**RUNX1-RUNX1T1:** This subtype involves a chromosomal translocation that fuses the RUNX1 and RUNX1T1 genes. It typically presents in younger AML patients and is associated with favorable treatment responses.
-**CBFB-MYH11:** Characterized by the fusion of the CBFB and MYH11 genes, this subtype is also often seen in younger patients and has a relatively positive prognosis with targeted therapies.
-**NPM1:** A common mutation in AML, the NPM1 subtype is characterized by mutations in the NPM1 gene. While generally responsive to treatment, its prognosis can vary based on additional genetic factors.
-**PML-RARA:** This subtype results from the fusion of the PML and RARA genes, leading to a distinct form of AML known as Acute Promyelocytic Leukemia (APL). It has a highly specific treatment protocol and, if treated promptly, can have an excellent prognosis.
+**RUNX1-RUNX1T1:** This subtype involves a chromosomal translocation that fuses the RUNX1 and RUNX1T1 genes. It typically presents in younger AML patients and is associated with favorable treatment responses.\n
+**CBFB-MYH11:** Characterized by the fusion of the CBFB and MYH11 genes, this subtype is also often seen in younger patients and has a relatively positive prognosis with targeted therapies.\n
+**NPM1:** A common mutation in AML, the NPM1 subtype is characterized by mutations in the NPM1 gene. While generally responsive to treatment, its prognosis can vary based on additional genetic factors.\n
+**PML-RARA:** This subtype results from the fusion of the PML and RARA genes, leading to a distinct form of AML known as Acute Promyelocytic Leukemia (APL). It has a highly specific treatment protocol and, if treated promptly, can have an excellent prognosis.\n
 **Control Group:** This group includes samples without AML, serving as a baseline for comparison and ensuring accuracy in the classification of AML subtypes.
         """)
     
