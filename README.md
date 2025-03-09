@@ -53,10 +53,11 @@ The data is preprocessed, ensuring class balance, and is used for training and t
 
 ### AML Subtype Classification
 
-- An ensemble approach (XGBoost, CatBoost, Random Forest, and Neural Network) is employed to predict AML subtypes.
+- An ensemble approach (XGBoost, CatBoost, LightGBM, Random Forest, and Neural Network) is employed to predict AML subtypes.
 - A binary classifier first identifies AML presence, and, if detected, the model further classifies the subtype.
 
-![image](https://github.com/user-attachments/assets/0d873077-6487-4d6e-8513-fed141a9c13a)
+![Screenshot 2025-03-10 002536](https://github.com/user-attachments/assets/0eec969a-f70d-4777-a77c-38cba5aedea2)
+
 
 ---
 ## Results
