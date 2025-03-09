@@ -15,12 +15,10 @@ with open("voting_model.pkl", "rb") as file:
     voting_model = dill.load(file)
 
 # Blood cell type labels
-cell_types = [
-    "Basophil", "Eosinophil", "Erythroblast", "IG", "Lymphocyte", "Monocyte", "Neutrophil", "Platelet"
-]
+cell_types = ["Basophil", "Eosinophil", "Erythroblast", "IG", "Lymphocyte", "Monocyte", "Neutrophil", "Platelet"]
 
 # AML subtype labels
-aml_subtypes = ['Control Group', 'CBFB-MYH11', 'NPM1', 'PML-RARA', 'RUNX1-RUNX1T1']
+aml_subtypes = ["CBFB-MYH11", "NPM1", "PML-RARA", "RUNX1-RUNX1T1", "Control Group"]
 
 def preprocess_image(image):
     """
