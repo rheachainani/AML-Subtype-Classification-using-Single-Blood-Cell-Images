@@ -3,7 +3,7 @@ pandas
 xgboost
 lightgbm
 catboost
-scikit-learn
+scikit-learn==1.4.2
 imbalanced-learn
 tensorflow
 scikeras
