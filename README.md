@@ -61,8 +61,8 @@ The data is preprocessed, ensuring class balance, and is used for training and t
 ---
 ## Results
 
-- The CNN achieved 94% accuracy on unseen data, indicating robust performance.
-- Performance metrics across AML subtypes and control groups demonstrate high precision, recall, and F1-scores.
+- The CNNs achieved 71-94% accuracy on unseen data, indicating robust performance.
+- Performance metrics across AML subtypes and control groups demonstrate decent precision, recall, and F1-scores, with scope of improvement.
 - Correlations of the single blood cell types with the presence/absence of AML suggest that basophils may indicate control, while lymphocytes and monocytes correlate with AML subtypes.
 
 ---
@@ -78,7 +78,9 @@ The Streamlit application classifies AML subtypes using blood cell images. It co
 
 The application leverages deep learning for single-cell classification and an ensemble model (`voting_model.pkl`) for final AML subtype prediction.
 
-[Demo](https://drive.google.com/file/d/1sYIbR92YQYGrJCTk6gm-MTWxWLfRUK_X/view?usp=sharing) (open in new tab)
+Check out the video demo [here](https://drive.google.com/file/d/1pmqf-FautlReBhRNr6v29fLoFYVruZTk/view).
+
+And try it out for yourself [here](https://aml-subtype-classification.streamlit.app/)!
 
 ---
 
